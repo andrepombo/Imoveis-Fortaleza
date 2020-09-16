@@ -70,4 +70,5 @@ prediction = load_rfr.predict(df)
 st.header('Prediction of Price in R$')
 st.write(prediction)
 st.write('---')
+st.write('Obs: This App was created for educational purposes only, prediction prices may not real reflect real market prices!')
 
