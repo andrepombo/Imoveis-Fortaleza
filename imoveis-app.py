@@ -72,3 +72,10 @@ st.write(prediction)
 st.write('---')
 st.write('Obs: This App was created for educational purposes only, prediction prices may not reflect real market prices!')
 
+import st_state_patch
+s = st.GlobalState(key="user metadata")
+if not s:
+    # Initialize it here!
+    s.counter = 0
+s.counter += 1
+st.markdown(f'Page viewed = {s.counter}')
